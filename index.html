@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -68,7 +68,8 @@
 				theme: {
 					extend: {
 						colors: {
-							primary: '#F5FFFA',
+							<!-- #815a3c-->
+							primary: '#8C5C3C',
 							dark: '#121212',
 							light: '#eeeeee',
 							lightgray: '#aaaaaa',
@@ -83,9 +84,11 @@
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	</head>
-	<body class="bg-gradient-to-t from-gray-100 to-gray-300">
+	<body
+		class="bg-gradient-to-br from-gray-500/50 to-white font-sans text-stone-800"
+	>
 		<header id="header">
-			<div class="bg-gray-50 px-4 max-w-full sm:px-6 justify-between">
+			<div class="bg-gray-50 px-4 max-w-full sm:px-6 justify-between shadow-md">
 				<div class="relative pt-6 pb-6 sm:pb-4">
 					<nav
 						class="relative flex items-center justify-between sm:h-10 md:justify-center"
@@ -112,7 +115,7 @@
 										id="mobile-menu-button"
 										aria-expanded="false"
 										aria-controls="mobile-menu"
-										class="inline-flex items-center justify-center p-2 text-gray-900 bg-gray-50 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50"
+										class="inline-flex items-center justify-center p-2 text-stone-900 bg-gray-50 rounded-md hover:text-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50"
 										type="button"
 									>
 										<span class="sr-only">Open main menu</span>
@@ -140,21 +143,36 @@
 							<li>
 								<a
 									href="#galery"
-									class="text-base font-normal text-gray-900 list-none hover:text-gray-900"
+									class="text-base font-normal text-stone-800 hover:text-primary transition-colors"
 									>Галерея</a
 								>
 							</li>
 							<li>
 								<a
+									href="#advantages"
+									class="text-base font-normal text-stone-800 hover:text-primary transition-colors"
+									>Преимущества</a
+								>
+							</li>
+							<li>
+								<a
 									href="#work"
-									class="text-base font-normal text-gray-900 list-none hover:text-gray-900"
+									class="text-base font-normal text-stone-800 hover:text-primary transition-colors"
 									>Процесс</a
 								>
 							</li>
 							<li>
 								<a
+									href="#process"
+									class="text-base font-normal text-stone-800 hover:text-primary transition-colors"
+									>Работа</a
+								>
+							</li>
+
+							<li>
+								<a
 									href="#contacts"
-									class="text-base font-normal text-gray-900 list-none hover:text-gray-900"
+									class="text-base font-normal text-stone-800 hover:text-primary transition-colors"
 									>Контакты</a
 								>
 							</li>
@@ -170,16 +188,14 @@
 									aria-label="Instagram"
 								>
 									<svg
-										class="texy-gray-900 hover:text-gray-500"
+										class="text-stone-800 hover:text-primary transition-colors"
 										xmlns="http://www.w3.org/2000/svg"
-										version="1.1"
 										x="0px"
 										y="0px"
 										width="40"
 										height="40"
 										viewBox="0 0 32 32"
 										stroke="currentColor"
-										stroke-width="0.3"
 									>
 										<path
 											d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z"
@@ -191,7 +207,7 @@
 								<!-- Telegram SVG link -->
 								<a href="https://t.me/Brutalpugleather" aria-label="Telegram">
 									<svg
-										class="text-gray-900 hover:text-gray-500"
+										class="text-stone-800 hover:text-primary transition-colors"
 										xmlns="http://www.w3.org/2000/svg"
 										x="0px"
 										y="0px"
@@ -214,7 +230,7 @@
 			<!-- Mobile Menu -->
 			<div
 				id="mobile-menu"
-				class="hidden md:hidden bg-gray-50 pb-4"
+				class="hidden md:hidden bg-gray-50 pb-4 shadow-md"
 				aria-label="Mobile menu"
 			>
 				<div class="dark:bg-black w-full">
@@ -235,21 +251,36 @@
 					<li>
 						<a
 							href="#galery"
-							class="text-base font-normal px-3 py-2 text-gray-900 list-none hover:text-gray-900"
+							class="px-3 py-2 text-base font-normal text-stone-800 hover:text-primary transition-colors"
 							>Галерея</a
 						>
 					</li>
 					<li>
 						<a
+							href="#advantages"
+							class="px-3 py-2 text-base font-normal text-stone-800 hover:text-primary transition-colors"
+							>Преимущества</a
+						>
+					</li>
+					<li>
+						<a
 							href="#work"
-							class="text-base font-normal px-3 py-2 text-gray-900 list-none hover:text-gray-900"
+							class="px-3 py-2 text-base font-normal text-stone-800 hover:text-primary transition-colors"
 							>Процесс</a
 						>
 					</li>
 					<li>
 						<a
+							href="#process"
+							class="px-3 py-2 text-base font-normal text-stone-800 hover:text-primary transition-colors"
+							>Работа</a
+						>
+					</li>
+
+					<li>
+						<a
 							href="#contacts"
-							class="text-base font-normal px-3 py-2 text-gray-900 list-none hover:text-gray-900"
+							class="px-3 py-2 text-base font-normal text-stone-800 hover:text-primary transition-colors"
 							>Контакты</a
 						>
 					</li>
@@ -281,22 +312,29 @@
 							class="text-5xl md:text-4xl lg:text-6xl tracking-tighter font-bold mb-4"
 						>
 							<ul class="space-y-10">
-								<li class="text-gray-600">
+								<li class="text-stone-950">
 									Натуральная <span class="text-primary">кожа</span>
 								</li>
-								<li class="text-primary">
-									Ручной <span class="text-gray-600">шов</span>
+								<li class="text-stone-950">
+									<span class="text-primary">Ручной </span>шов
 								</li>
-								<li class="text-gray-600">
+								<li class="text-stone-950">
 									Персональный <span class="text-primary">подход</span>
 								</li>
 							</ul>
 						</h1>
+						<a href="#contacts" class="mt-8 inline-block">
+							<button
+								class="bg-stone-950 hover:bg-primary text-white px-6 py-3 rounded-md shadow-md transition-colors font-bold tracking-tight"
+							>
+								Связаться с нами
+							</button>
+						</a>
 					</div>
 
-					<div class="md:w-1/2">
+					<div class="md:w-1/2 shadow-md rounded-lg overflow-hidden">
 						<video
-							class="rounded-lg w-30 h-30"
+							class="w-full h-auto"
 							autoplay
 							muted
 							loop
@@ -330,15 +368,15 @@
 			<div class="container mx-auto">
 				<div class="text-center">
 					<h2
-						class="text-3xl md:text-4xl font-bold mb-10 text-gray-900 items-center"
+						class="text-3xl md:text-4xl font-bold mb-10 text-stone-950 tracking-tight"
 					>
-						Наши работы
+						Наши <span class="text-primary">работы</span>
 					</h2>
 				</div>
 
 				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mx-4">
 					<!-- Portfolio Item 1 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/1.jpg"
 							alt="Примеры работ"
@@ -346,7 +384,7 @@
 						/>
 					</div>
 					<!-- Portfolio Item 2 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/6.jpg"
 							alt="Примеры работ"
@@ -354,7 +392,7 @@
 						/>
 					</div>
 					<!-- Portfolio Item 3 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/8.jpg"
 							alt="Примеры работ"
@@ -362,7 +400,7 @@
 						/>
 					</div>
 					<!-- Portfolio Item 4 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/18.jpg"
 							alt="Примеры работ"
@@ -370,7 +408,7 @@
 						/>
 					</div>
 					<!-- Portfolio Item 5 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/5.jpg"
 							alt="Примеры работ"
@@ -379,7 +417,7 @@
 					</div>
 
 					<!-- Portfolio Item 6 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/2.jpg"
 							alt="Примеры работ"
@@ -388,7 +426,7 @@
 					</div>
 
 					<!-- Portfolio Item 7 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/7.jpg"
 							alt="Примеры работ"
@@ -396,7 +434,7 @@
 						/>
 					</div>
 					<!-- Portfolio Item 8 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/3.jpg"
 							alt="Примеры работ"
@@ -404,7 +442,7 @@
 						/>
 					</div>
 					<!-- Portfolio Item 9 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/9.jpg"
 							alt="Примеры работ"
@@ -413,7 +451,7 @@
 					</div>
 
 					<!-- Portfolio Item 10 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/19.jpg"
 							alt="Примеры работ"
@@ -422,7 +460,7 @@
 					</div>
 
 					<!-- Portfolio Item 11 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/11.jpg"
 							alt="Примеры работ"
@@ -430,7 +468,7 @@
 						/>
 					</div>
 					<!-- Portfolio Item 12 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/15.jpg"
 							alt="Примеры работ"
@@ -438,7 +476,7 @@
 						/>
 					</div>
 					<!-- Portfolio Item 13 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/12.jpg"
 							alt="Примеры работ"
@@ -447,7 +485,7 @@
 					</div>
 
 					<!-- Portfolio Item 14 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/14.jpg"
 							alt="Примеры работ"
@@ -456,7 +494,7 @@
 					</div>
 
 					<!-- Portfolio Item 15 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/13.jpg"
 							alt="Примеры работ"
@@ -464,7 +502,7 @@
 						/>
 					</div>
 					<!-- Portfolio Item 16 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/16.jpg"
 							alt="Примеры работ"
@@ -472,7 +510,7 @@
 						/>
 					</div>
 					<!-- Portfolio Item 17 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/17.jpg"
 							alt="Примеры работ"
@@ -481,7 +519,7 @@
 					</div>
 
 					<!-- Portfolio Item 18 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/4.jpg"
 							alt="Примеры работ"
@@ -490,7 +528,7 @@
 					</div>
 
 					<!-- Portfolio Item 19 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/10.jpg"
 							alt="Примеры работ"
@@ -498,7 +536,7 @@
 						/>
 					</div>
 					<!-- Portfolio Item 20 -->
-					<div class="overflow-hidden rounded-lg">
+					<div class="overflow-hidden rounded-lg shadow-md">
 						<img
 							src="BPLPhoto/20.jpg"
 							alt="Примеры работ"
@@ -524,11 +562,161 @@
 			></div>
 		</div>
 
+		<section
+			id="advantages"
+			class="py-16 bg-gradient-to-br from-gray-500/50 to-white"
+		>
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-12">
+					<h2
+						class="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-stone-950"
+					>
+						Наши <span class="text-primary">преимущества</span>
+					</h2>
+					<p class="text-primary text-2xl max-w-2xl mx-auto">
+						Почему клиенты выбирают именно нас
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+					<!-- Advantage 1 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="text-primary mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-8 w-8 text-stone-800 hover:text-primary"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+								/>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-3">Гарантия на все работы</h3>
+						<p class="text-stone-600">
+							Мы предоставляем гарантию на все выполненные работы.
+						</p>
+					</div>
+
+					<!-- Advantage 2 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="text-primary mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-8 w-8 text-stone-800 hover:text-primary"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+								/>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-3">Обсуждаем нюансы</h3>
+						<p class="text-stone-600">
+							Мы ценим Ваше мнение и всегда готовы обсудить нюансы изделия.
+						</p>
+					</div>
+
+					<!-- Advantage 3 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="text-primary mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-8 w-8 text-stone-800 hover:text-primary"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+								/>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-3">Качество</h3>
+						<p class="text-stone-600">
+							Вы получаете премиальный продукт, изготовленный профессионалом.
+						</p>
+					</div>
+
+					<!-- Advantage 4 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="text-primary mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-8 w-8 text-stone-800 hover:text-primary"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+								/>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-3">Качественные материалы</h3>
+						<p class="text-stone-600">
+							Мы используем только качественные материалы от итальянских фабрик.
+							Постоянно обновляем парк инструмента.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="dark:bg-black w-full">
+			<div
+				class="w-full h-px max-w-6xl mx-auto"
+				style="
+					background-image: linear-gradient(
+						90deg,
+						rgba(149, 131, 198, 0) 1.46%,
+						rgba(65, 30, 1, 0.6) 40.83%,
+						rgba(65, 30, 1, 0.6) 65.57%,
+						rgba(149, 131, 198, 0) 107.92%
+					);
+				"
+			></div>
+		</div>
+
 		<!-- Процесс изготовления -->
-		<section id="work" class="pt-4 pb-4 md:pt-4 md:pb-4 w-full">
+		<section id="work" class="pt-4 pb-4 md:pt-4 md:pb-4 w-full bg-gray-50">
 			<div class="text-center mb-4">
-				<h2 class="text-3xl md:text-4xl font-bold mt-4 mb-4 text-gray-900">
-					Процесс изготовления
+				<h2
+					class="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-stone-950"
+				>
+					<span class="text-primary">Процесс </span>изготовления
 				</h2>
 			</div>
 
@@ -655,15 +843,117 @@
 				</div>
 
 				<!-- Навигационные кнопки -->
-				<div class="swiper-button-prev text-gray-900 pl-4"></div>
-				<div class="swiper-button-next text-gray-900 pr-4"></div>
+				<div class="swiper-button-prev text-stone-900 pl-4"></div>
+				<div class="swiper-button-next text-stone-900 pr-4"></div>
 
 				<!-- Полоса прокрутки -->
 				<div
-					class="swiper-scrollbar text-gray-900 shadow-white shadow-xl/40"
+					class="swiper-scrollbar text-stone-900 shadow-white shadow-xl/40"
 				></div>
 			</div>
 		</section>
+
+		<div class="dark:bg-black w-full">
+			<div
+				class="w-full h-px max-w-6xl mx-auto"
+				style="
+					background-image: linear-gradient(
+						90deg,
+						rgba(149, 131, 198, 0) 1.46%,
+						rgba(65, 30, 1, 0.6) 40.83%,
+						rgba(65, 30, 1, 0.6) 65.57%,
+						rgba(149, 131, 198, 0) 107.92%
+					);
+				"
+			></div>
+		</div>
+		<section
+			id="process"
+			class="py-16 bg-gradient-to-br from-gray-500/50 to-white"
+		>
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-12">
+					<h2
+						class="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-stone-950"
+					>
+						Как мы <span class="text-primary">работаем</span>
+					</h2>
+					<p class="text-primary text-2xl max-w-2xl mx-auto">
+						Простой и понятный процесс сотрудничества с нами
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<!-- Process Step 1 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="step-number bg-stone-800 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 transition duration-300 hover:bg-primary"
+						>
+							01
+						</div>
+						<h3 class="text-xl font-semibold mb-2 text-stone-800">Заявка</h3>
+						<p class="text-stone-600">
+							Вы связываетесь с нами любым удобным способом и мы обсуждаем Ваш
+							заказ.
+						</p>
+					</div>
+
+					<!-- Process Step 2 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="step-number bg-stone-800 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 transition duration-300 hover:bg-primary"
+						>
+							02
+						</div>
+						<h3 class="text-xl font-semibold mb-2 text-stone-800">
+							Согласование
+						</h3>
+						<p class="text-stone-600">
+							Подбираем материалы, фактуру и цвет будущего изделия.
+						</p>
+					</div>
+
+					<!-- Process Step 3 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="step-number bg-stone-800 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 transition duration-300 hover:bg-primary"
+						>
+							03
+						</div>
+						<h3 class="text-xl font-semibold mb-2 text-stone-800">
+							Оценка стоимости
+						</h3>
+						<p class="text-stone-600">
+							Согласуем с Вами стоимость и сложность выполнения работ.
+						</p>
+					</div>
+
+					<!-- Process Step 4 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="step-number bg-stone-800 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 transition duration-300 hover:bg-primary"
+						>
+							04
+						</div>
+						<h3 class="text-xl font-semibold mb-2 text-stone-800">
+							Выполнение работ
+						</h3>
+						<p class="text-stone-600">
+							Выполням работу, обсуждаем и оформляем доставку.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<div class="dark:bg-black w-full">
 			<div
 				class="w-full h-px max-w-6xl mx-auto"
@@ -692,38 +982,32 @@
 						/>
 					</a>
 					<div
-						class="mb-6 mx-10 text-sm font-medium text-gray-900 sm:mb-0 dark:text-gray-400"
+						class="mb-6 mx-10 text-sm font-medium text-stone-900 sm:mb-0 dark:text-stone-500"
 					>
 						<div>Связаться с нами</div>
 						<div class="grid grid-cols-3 w-full pt-4 place-items-center">
 							<a
 								href="https://www.instagram.com/brutalpugleather?igsh=MTVibDJyeGZ4NjFncQ=="
-								class="hover:text-gray-500"
+								class=""
 							>
 								<img
-									class="w-auto h-7"
+									class="w-auto h-7 hover:scale-110"
 									src="icon_instagram.png"
 									loading="lazy"
 									alt="Telegram"
 							/></a>
 
-							<a
-								href="https://t.me/Brutalpugleather"
-								class="hover:text-gray-500"
-							>
+							<a href="https://t.me/Brutalpugleather" class="">
 								<img
-									class="w-auto h-7"
+									class="w-auto h-7 hover:scale-110"
 									src="icon_telegram.png"
 									loading="lazy"
 									alt="Telegram"
 							/></a>
 
-							<a
-								href="mailto:Februaryjack2000@gmail.com"
-								class="hover:text-gray-500"
-							>
+							<a href="mailto:Februaryjack2000@gmail.com" class="">
 								<img
-									class="w-auto h-7"
+									class="w-auto h-7 hover:scale-110"
 									src="icon_gmail.png"
 									loading="lazy"
 									alt="Telegram"
@@ -733,7 +1017,7 @@
 				</div>
 				<div class="grid grid-cols-2 text-center mt-6 gap-2">
 					<div class="w-full">
-						<span class="text-left text-sm text-gray-900 dark:text-gray-400">
+						<span class="text-left text-sm text-stone-900 dark:text-stone-500">
 							© 2025 <a href="#" class="hover:underline">BrutalPugLeather™</a>.
 							All Rights Reserved.
 						</span>
@@ -741,7 +1025,7 @@
 					<div class="w-full">
 						<a
 							href="policy.html"
-							class="text-sm text-gray-900 hover:text-gray-500 dark:text-gray-400 mx-10 md:mx-6 text-end"
+							class="text-sm text-stone-900 hover:text-primary dark:text-stone-500 mx-10 md:mx-6 text-end"
 							>Политика конфиденциальности</a
 						>
 					</div>
@@ -752,7 +1036,7 @@
 			<button
 				id="backToTopBtn"
 				title="Go to top"
-				class="hidden fixed bottom-8 right-8 z-50 bg-gray-700 text-white px-4 py-3 rounded-lg text-lg hover:bg-gray-900 focus:outline-none"
+				class="hidden fixed bottom-8 right-8 z-50 bg-gray-700 text-white px-4 py-3 rounded-lg text-lg hover:bg-primary focus:outline-none"
 				onclick="topFunction()"
 				aria-label="Scroll to top"
 			>
