@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Описание сайта для поисковиков и сниппетов -->
+		<meta
+			name="description"
+			content="Профессиональное изготовление изделий из кожи. Ручная работа. Натуральная кожа, ручной шов, персональный подход."
+		/>
+
+		<!-- Ключевые слова-->
+		<meta
+			name="keywords"
+			content="кожа, изделия из кожи, ручная работа, кожаные изделия, мастерская по коже, натуральная кожа, кожгалантерея"
+		/>
+
+		<!-- Автор сайта -->
+		<meta name="author" content="BrutalPugLeather" />
+
+		<!-- Настройки для социальных сетей — Open Graph -->
+		<meta property="og:title" content="Изделия из кожи ручной работы" />
+		<meta
+			property="og:description"
+			content="Профессиональное изготовление изделий из кожи. Ручная работа."
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://вашсайт.рус/" />
+		<meta property="og:image" content="https://вашсайт.рус/og-image.jpg" />
+		<meta property="og:locale" content="ru_RU" />
+
+		<!-- Canonical URL — для избежания дублирования -->
+		<link rel="canonical" href="https://вашсайт.рус/" />
+		<!-- Подключение шрифта Montserrat -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Иконки -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+
+		<!-- Стили Swiper -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<title>Изделия из кожи ручной работы</title>
+
+		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+			.service-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+				gap: 1.5rem;
+			}
+		</style>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							<!-- #815a3c-->
+							primary: '#8C5C3C',
+							dark: '#121212',
+							light: '#eeeeee',
+							lightgray: '#aaaaaa',
+						},
+						fontFamily: {
+							montserrat: ['Montserrat', 'sans-serif'],
+						},
+					},
+				},
+			};
+		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	</head>
+	<body
+		class="bg-gradient-to-br from-gray-500/50 to-gray-300 font-sans text-stone-800"
+	>
+		<header id="header">
+			<div class="bg-gray-50 px-4 max-w-full sm:px-6 justify-between shadow-md">
+				<div class="relative pt-6 pb-6 sm:pb-4">
+					<nav
+						class="relative flex items-center justify-between sm:h-10 md:justify-center"
+						aria-label="Global"
+					>
+						<div
+							class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"
+						>
+							<div class="flex items-center justify-between w-full">
+								<a
+									href="https://t.me/Brutalpugleather"
+									aria-label="Company Name"
+								>
+									<img
+										class="w-full h-14 hover:scale-105"
+										src="PUGpng.png"
+										loading="lazy"
+										alt="Brutal Pug Leather Logo"
+									/>
+								</a>
+
+								<div class="flex items-center -mr-2 md:hidden">
+									<button
+										id="mobile-menu-button"
+										aria-expanded="false"
+										aria-controls="mobile-menu"
+										class="inline-flex items-center justify-center p-2 text-stone-900 bg-gray-50 rounded-md hover:text-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50"
+										type="button"
+									>
+										<span class="sr-only">Open main menu</span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="2"
+											stroke="currentColor"
+											aria-hidden="true"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M4 6h16M4 12h16M4 18h16"
+											></path>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="hidden md:flex md:space-x-10 list-none">
+							<li>
+								<a
+									href="#galery"
+									class="text-base font-normal text-stone-800 hover:text-primary transition-colors"
+									>Галерея</a
+								>
+							</li>
+							<li>
+								<a
+									href="#advantages"
+									class="text-base font-normal text-stone-800 hover:text-primary transition-colors"
+									>Преимущества</a
+								>
+							</li>
+							<li>
+								<a
+									href="#work"
+									class="text-base font-normal text-stone-800 hover:text-primary transition-colors"
+									>Процесс</a
+								>
+							</li>
+							<li>
+								<a
+									href="#process"
+									class="text-base font-normal text-stone-800 hover:text-primary transition-colors"
+									>Работа</a
+								>
+							</li>
+
+							<li>
+								<a
+									href="#contacts"
+									class="text-base font-normal text-stone-800 hover:text-primary transition-colors"
+									>Контакты</a
+								>
+							</li>
+						</div>
+
+						<div
+							class="absolute right-10 md:right-0 flex items-center justify-end inset-y-0 gap-1"
+						>
+							<div class="inline-flex">
+								<!-- Instagram SVG link -->
+								<a
+									href="https://www.instagram.com/brutalpugleather?igsh=MTVibDJyeGZ4NjFncQ=="
+									aria-label="Instagram"
+								>
+									<svg
+										class="text-stone-800 hover:text-primary transition-colors hover:scale-105"
+										xmlns="http://www.w3.org/2000/svg"
+										x="0px"
+										y="0px"
+										width="40"
+										height="40"
+										viewBox="0 0 32 32"
+										stroke="currentColor"
+									>
+										<path
+											d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z"
+										></path>
+									</svg>
+								</a>
+							</div>
+							<div class="inline-flex">
+								<!-- Telegram SVG link -->
+								<a href="https://t.me/Brutalpugleather" aria-label="Telegram">
+									<svg
+										class="text-stone-800 hover:text-primary transition-colors hover:scale-105"
+										xmlns="http://www.w3.org/2000/svg"
+										x="0px"
+										y="0px"
+										width="30"
+										height="30"
+										viewBox="0 0 50 50"
+										stroke="currentColor"
+									>
+										<path
+											d="M 44.376953 5.9863281 C 43.889905 6.0076957 43.415817 6.1432497 42.988281 6.3144531 C 42.565113 6.4845113 40.128883 7.5243408 36.53125 9.0625 C 32.933617 10.600659 28.256963 12.603668 23.621094 14.589844 C 14.349356 18.562196 5.2382813 22.470703 5.2382812 22.470703 L 5.3046875 22.445312 C 5.3046875 22.445312 4.7547875 22.629122 4.1972656 23.017578 C 3.9185047 23.211806 3.6186028 23.462555 3.3730469 23.828125 C 3.127491 24.193695 2.9479735 24.711788 3.015625 25.259766 C 3.2532479 27.184511 5.2480469 27.730469 5.2480469 27.730469 L 5.2558594 27.734375 L 14.158203 30.78125 C 14.385177 31.538434 16.858319 39.792923 17.402344 41.541016 C 17.702797 42.507484 17.984013 43.064995 18.277344 43.445312 C 18.424133 43.635633 18.577962 43.782915 18.748047 43.890625 C 18.815627 43.933415 18.8867 43.965525 18.957031 43.994141 C 18.958531 43.994806 18.959437 43.99348 18.960938 43.994141 C 18.969579 43.997952 18.977708 43.998295 18.986328 44.001953 L 18.962891 43.996094 C 18.979231 44.002694 18.995359 44.013801 19.011719 44.019531 C 19.043456 44.030655 19.062905 44.030268 19.103516 44.039062 C 20.123059 44.395042 20.966797 43.734375 20.966797 43.734375 L 21.001953 43.707031 L 26.470703 38.634766 L 35.345703 45.554688 L 35.457031 45.605469 C 37.010484 46.295216 38.415349 45.910403 39.193359 45.277344 C 39.97137 44.644284 40.277344 43.828125 40.277344 43.828125 L 40.310547 43.742188 L 46.832031 9.7519531 C 46.998903 8.9915162 47.022612 8.334202 46.865234 7.7402344 C 46.707857 7.1462668 46.325492 6.6299361 45.845703 6.34375 C 45.365914 6.0575639 44.864001 5.9649605 44.376953 5.9863281 z M 44.429688 8.0195312 C 44.627491 8.0103707 44.774102 8.032983 44.820312 8.0605469 C 44.866523 8.0881109 44.887272 8.0844829 44.931641 8.2519531 C 44.976011 8.419423 45.000036 8.7721605 44.878906 9.3242188 L 44.875 9.3359375 L 38.390625 43.128906 C 38.375275 43.162926 38.240151 43.475531 37.931641 43.726562 C 37.616914 43.982653 37.266874 44.182554 36.337891 43.792969 L 26.632812 36.224609 L 26.359375 36.009766 L 26.353516 36.015625 L 23.451172 33.837891 L 39.761719 14.648438 A 1.0001 1.0001 0 0 0 38.974609 13 A 1.0001 1.0001 0 0 0 38.445312 13.167969 L 14.84375 28.902344 L 5.9277344 25.849609 C 5.9277344 25.849609 5.0423771 25.356927 5 25.013672 C 4.99765 24.994652 4.9871961 25.011869 5.0332031 24.943359 C 5.0792101 24.874869 5.1948546 24.759225 5.3398438 24.658203 C 5.6298218 24.456159 5.9609375 24.333984 5.9609375 24.333984 L 5.9941406 24.322266 L 6.0273438 24.308594 C 6.0273438 24.308594 15.138894 20.399882 24.410156 16.427734 C 29.045787 14.44166 33.721617 12.440122 37.318359 10.902344 C 40.914175 9.3649615 43.512419 8.2583658 43.732422 8.1699219 C 43.982886 8.0696253 44.231884 8.0286918 44.429688 8.0195312 z M 33.613281 18.792969 L 21.244141 33.345703 L 21.238281 33.351562 A 1.0001 1.0001 0 0 0 21.183594 33.423828 A 1.0001 1.0001 0 0 0 21.128906 33.507812 A 1.0001 1.0001 0 0 0 20.998047 33.892578 A 1.0001 1.0001 0 0 0 20.998047 33.900391 L 19.386719 41.146484 C 19.35993 41.068197 19.341173 41.039555 19.3125 40.947266 L 19.3125 40.945312 C 18.800713 39.30085 16.467362 31.5161 16.144531 30.439453 L 33.613281 18.792969 z M 22.640625 35.730469 L 24.863281 37.398438 L 21.597656 40.425781 L 22.640625 35.730469 z"
+										></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+
+			<!-- Mobile Menu -->
+			<div
+				id="mobile-menu"
+				class="hidden md:hidden bg-gray-50 pb-4 shadow-md"
+				aria-label="Mobile menu"
+			>
+				<div class="dark:bg-black w-full">
+					<div
+						class="w-full h-[2px] max-w-6xl mx-auto"
+						style="
+							background-image: linear-gradient(
+								90deg,
+								rgba(149, 131, 198, 0) 1.46%,
+								rgba(65, 30, 1, 0.6) 30.83%,
+								rgba(65, 30, 1, 0.6) 75.57%,
+								rgba(149, 131, 198, 0) 107.92%
+							);
+						"
+					></div>
+				</div>
+				<ul class="px-4 pt-2 pb-3 space-y-1">
+					<li>
+						<a
+							href="#galery"
+							class="px-3 py-2 text-base font-normal text-stone-800 hover:text-primary transition-colors"
+							>Галерея</a
+						>
+					</li>
+					<li>
+						<a
+							href="#advantages"
+							class="px-3 py-2 text-base font-normal text-stone-800 hover:text-primary transition-colors"
+							>Преимущества</a
+						>
+					</li>
+					<li>
+						<a
+							href="#work"
+							class="px-3 py-2 text-base font-normal text-stone-800 hover:text-primary transition-colors"
+							>Процесс</a
+						>
+					</li>
+					<li>
+						<a
+							href="#process"
+							class="px-3 py-2 text-base font-normal text-stone-800 hover:text-primary transition-colors"
+							>Работа</a
+						>
+					</li>
+
+					<li>
+						<a
+							href="#contacts"
+							class="px-3 py-2 text-base font-normal text-stone-800 hover:text-primary transition-colors"
+							>Контакты</a
+						>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="dark:bg-black w-full">
+			<div
+				class="w-full h-[2px] max-w-6xl mx-auto"
+				style="
+					background-image: linear-gradient(
+						90deg,
+						rgba(149, 131, 198, 0) 1.46%,
+						rgba(65, 30, 1, 0.6) 30.83%,
+						rgba(65, 30, 1, 0.6) 75.57%,
+						rgba(149, 131, 198, 0) 107.92%
+					);
+				"
+			></div>
+		</div>
+
+		<!-- Hero Banner -->
+		<section class="h-1/2 gap-6 pt-4 pb-4 md:pt-4 md:pb-4">
+			<div class="container mx-auto px-4">
+				<div class="flex flex-col md:flex-row py-4 md:py-10 items-center">
+					<div class="md:w-1/2 mb-4 md:mb-0 w-full justify-between">
+						<h1
+							class="text-[30px] md:text-4xl lg:text-5xl xl:text-6xl tracking-tighter font-bold mb-1 md:mb-4 mx-1"
+						>
+							<ul class="space-y-3 md:space-y-10">
+								<li class="text-stone-950 justify-left">
+									Натуральная
+									<span class="text-primary justify-right">кожа</span>
+								</li>
+								<li class="text-stone-950">
+									<span class="text-primary">Ручной </span>шов
+								</li>
+								<li class="text-stone-950">
+									Персональный <span class="text-primary">подход</span>
+								</li>
+							</ul>
+						</h1>
+						<a href="#contacts" class="mt-2 md:mt-8 inline-block">
+							<button
+								class="bg-stone-950 hover:bg-primary text-white px-6 py-3 rounded-md shadow-md transition-colors font-bold tracking-tight"
+							>
+								Связаться с нами
+							</button>
+						</a>
+					</div>
+
+					<div class="md:w-1/2 shadow-md rounded-lg overflow-hidden">
+						<video
+							class="w-full h-auto"
+							autoplay
+							muted
+							loop
+							preload="none"
+							poster="poster.jpg"
+						>
+							<source src="BPLPhoto/animate.mp4" type="video/mp4" />
+						</video>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="dark:bg-black w-full">
+			<div
+				class="w-full h-[2px] max-w-6xl mx-auto"
+				style="
+					background-image: linear-gradient(
+						90deg,
+						rgba(149, 131, 198, 0) 1.46%,
+						rgba(65, 30, 1, 0.6) 30.83%,
+						rgba(65, 30, 1, 0.6) 75.57%,
+						rgba(149, 131, 198, 0) 107.92%
+					);
+				"
+			></div>
+		</div>
+
+		<!-- Фотогалерея для мобильных-->
+		<section
+			id="galery"
+			class="md:hidden pt-4 pb-4 md:pt-4 md:pb-4 w-full bg-gray-50"
+		>
+			<div class="text-center mb-4">
+				<h2
+					class="text-[30px] md:text-4xl font-bold mb-4 tracking-tight text-stone-950"
+				>
+					Наши<span class="text-primary"> работы</span>
+				</h2>
+			</div>
+			<!-- Слайдер для телефона -->
+			<div class="swiper w-full">
+				<div class="swiper-wrapper">
+					<!-- Слайды -->
+					<div class="swiper-slide">
+						<!-- Portfolio Item 1 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/1.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<!-- Portfolio Item 2 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/6.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<!-- Portfolio Item 3 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/8.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<!-- Portfolio Item 4 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/18.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<!-- Portfolio Item 5 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/5.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<!-- Portfolio Item 6 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/2.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<!-- Portfolio Item 7 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/7.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<!-- Portfolio Item 8 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/3.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<!-- Portfolio Item 9 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/9.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<!-- Portfolio Item 10 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/19.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<!-- Portfolio Item 11 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/11.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<!-- Portfolio Item 12 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/15.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<!-- Portfolio Item 13 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/12.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<!-- Portfolio Item 14 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/14.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<!-- Portfolio Item 15 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/13.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<!-- Portfolio Item 16 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/16.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<!-- Portfolio Item 17 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/17.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<!-- Portfolio Item 18 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/4.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<!-- Portfolio Item 19 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/10.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<!-- Portfolio Item 20 -->
+						<div class="flex gap-4 mx-5 my-2.5">
+							<img
+								src="/BPLPhoto/20.jpg"
+								alt="Примеры работ"
+								class="max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+				</div>
+
+				<!-- Полоса прокрутки -->
+				<div
+					class="swiper-scrollbar text-stone-900 shadow-white shadow-xl/40"
+				></div>
+			</div>
+		</section>
+		<!-- Фотогалерея -->
+		<section id="galery" class="py-10 bg-gray-50 hidden md:flex">
+			<div class="container mx-auto">
+				<div class="text-center">
+					<h2
+						class="text-[30px] md:text-4xl font-bold mb-10 text-stone-950 tracking-tight"
+					>
+						Наши <span class="text-primary">работы</span>
+					</h2>
+				</div>
+
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mx-4">
+					<!-- Portfolio Item 1 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/1.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[600px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+					<!-- Portfolio Item 2 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/6.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+					<!-- Portfolio Item 3 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/8.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+					<!-- Portfolio Item 4 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/18.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+					<!-- Portfolio Item 5 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/5.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[600px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+
+					<!-- Portfolio Item 6 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/2.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+
+					<!-- Portfolio Item 7 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/7.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+					<!-- Portfolio Item 8 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/3.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+					<!-- Portfolio Item 9 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/9.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[600px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+
+					<!-- Portfolio Item 10 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/19.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+
+					<!-- Portfolio Item 11 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/11.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+					<!-- Portfolio Item 12 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/15.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+					<!-- Portfolio Item 13 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/12.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[600px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+
+					<!-- Portfolio Item 14 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/14.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+
+					<!-- Portfolio Item 15 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/13.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+					<!-- Portfolio Item 16 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/16.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+					<!-- Portfolio Item 17 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/17.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[600px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+
+					<!-- Portfolio Item 18 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/4.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+
+					<!-- Portfolio Item 19 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/10.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+					<!-- Portfolio Item 20 -->
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<img
+							src="BPLPhoto/20.jpg"
+							alt="Примеры работ"
+							class="w-full max-h-[593px] object-cover transition duration-300 ease-in-out transform hover:scale-110"
+							loading="lazy"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="dark:bg-black w-full">
+			<div
+				class="w-full h-[2px] max-w-6xl mx-auto"
+				style="
+					background-image: linear-gradient(
+						90deg,
+						rgba(149, 131, 198, 0) 1.46%,
+						rgba(65, 30, 1, 0.6) 30.83%,
+						rgba(65, 30, 1, 0.6) 75.57%,
+						rgba(149, 131, 198, 0) 107.92%
+					);
+				"
+			></div>
+		</div>
+
+		<section
+			id="advantages"
+			class="py-16 bg-gradient-to-br from-gray-500/50 to-white"
+		>
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-10">
+					<h2
+						class="text-[30px] md:text-4xl font-bold mb-4 tracking-tight text-stone-950"
+					>
+						Наши <span class="text-primary">преимущества</span>
+					</h2>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+					<!-- Advantage 1 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="text-primary mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-8 w-8 text-stone-800 hover:text-primary"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+								/>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-3">Предоставляем гарантию</h3>
+						<p class="text-stone-600">
+							Вы получите гарантию на все выполненные работы.
+						</p>
+					</div>
+
+					<!-- Advantage 2 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="text-primary mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-8 w-8 text-stone-800 hover:text-primary"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="2"
+								stroke="currentColor"
+								class="size-6"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+								/>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-3">Обсуждаем нюансы</h3>
+						<p class="text-stone-600">
+							Ценим Ваше мнение и всегда готовы обсудить нюансы изделия.
+						</p>
+					</div>
+
+					<!-- Advantage 3 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="text-primary mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-8 w-8 text-stone-800 hover:text-primary"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+								/>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-3">Премиальное качество</h3>
+						<p class="text-stone-600">
+							Вы получаете уникальный продукт, изготовленный только для Васы.
+						</p>
+					</div>
+
+					<!-- Advantage 4 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="text-primary mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-8 w-8 text-stone-800 hover:text-primary"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+								/>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-3">Лучшие материалы</h3>
+						<p class="text-stone-600">
+							Мы используем только качественные материалы от итальянских фабрик.
+							Постоянно обновляем парк инструмента.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="dark:bg-black w-full">
+			<div
+				class="w-full h-[2px] max-w-6xl mx-auto"
+				style="
+					background-image: linear-gradient(
+						90deg,
+						rgba(149, 131, 198, 0) 1.46%,
+						rgba(65, 30, 1, 0.6) 30.83%,
+						rgba(65, 30, 1, 0.6) 75.57%,
+						rgba(149, 131, 198, 0) 107.92%
+					);
+				"
+			></div>
+		</div>
+		<!-- Процесс изготовления -->
+		<section id="work" class="pt-4 pb-4 md:pt-4 md:pb-4 w-full bg-gray-50">
+			<div class="text-center mb-4">
+				<h2
+					class="text-[30px] md:text-4xl font-bold mb-4 tracking-tight text-stone-950"
+				>
+					<span class="text-primary">Процесс </span>изготовления
+				</h2>
+			</div>
+
+			<!-- Слайды для мобильных -->
+			<div class="md:hidden">
+				<div class="mx-4 object-center">
+					<div class="relative min-h-screen overflow-hidden rounded-xl my-2">
+						<!-- Фон с размытием (внутри overflow-hidden) -->
+						<div
+							class="absolute inset-0 bg-[url('BPLPhoto/work/01.jpeg')] blur-[1px] bg-cover bg-center brightness-50 contrast-115"
+						></div>
+
+						<!-- Контент (не затронут blur) -->
+						<div
+							class="z-10 inset-0 flex flex-col items-center justify-center text-stone-300 contrast-125"
+						>
+							<h2 class="text-center text-stone-200 m-5 p-3 text-2xl">
+								Первый этап работы
+							</h2>
+							<p class="text-justify m-5 p-2 text-xl">
+								Обращаясь к нам, Вы гарантированно получаете качественный товар,
+								который обязательно станет любимым аксессуаром, а так же
+								подчеркнет Вашу индивидуальность.
+							</p>
+							<p class="text-justify m-5 p-2 text-xl">
+								Есть возможность выбрать фактуру кожи: гладкая или с мереей,
+								мягкая или более упругая.
+							</p>
+							<p class="text-justify m-5 p-2 text-xl">
+								Выберем необходимую толщину кожи именно под Ваше изделие.
+							</p>
+							<p class="text-justify m-5 p-2 text-xl">
+								Далее после выбора цвета, разновидности нити и подбора фурнитуры
+								мастер приступает к работе!
+							</p>
+						</div>
+					</div>
+					<div class="relative min-h-screen overflow-hidden rounded-xl my-2">
+						<!-- Фон с размытием (внутри overflow-hidden) -->
+						<div
+							class="absolute inset-0 bg-[url('BPLPhoto/work/02.jpg')] blur-[1px] bg-cover bg-center brightness-50 contrast-115"
+						></div>
+
+						<!-- Контент (не затронут blur) -->
+						<div
+							class="z-10 inset-0 flex flex-col items-center justify-center text-stone-300 contrast-125"
+						>
+							<h2 class="text-center text-stone-200 m-5 p-3 text-2xl">
+								Второй этап работы
+							</h2>
+							<p class="text-justify m-5 p-2 text-xl">
+								Мастер проектирует изделие и создает выкройку.
+							</p>
+							<p class="text-justify m-5 p-2 text-xl">
+								Если проект индивидуальный- мастер отшивает "пилотный" вариант.
+							</p>
+							<p class="text-justify m-5 p-2 text-xl">
+								Далее происходит раскрой материала и сборка изделия.
+							</p>
+							<p class="text-justify m-5 p-2 text-xl">
+								"Тонкие" места укрепляются специальными дублирующими
+								материалами.
+							</p>
+						</div>
+					</div>
+
+					<div class="relative min-h-screen overflow-hidden rounded-xl my-2">
+						<!-- Фон с размытием (внутри overflow-hidden) -->
+						<div
+							class="absolute inset-0 bg-[url('BPLPhoto/work/12.jpg')] blur-[1px] bg-cover bg-center brightness-50 contrast-115"
+						></div>
+
+						<!-- Контент (не затронут blur) -->
+						<div
+							class="z-10 inset-0 flex flex-col items-center justify-center text-stone-300 contrast-125"
+						>
+							<h2 class="text-center text-stone-200 m-5 p-3 text-2xl">
+								Третий этап работы
+							</h2>
+							<p class="text-justify m-5 p-2 text-xl">
+								На данном этапе происходит склеивание деталей клеем для кожи.
+							</p>
+							<p class="text-justify m-5 p-2 text-xl">
+								Разметка и пробой кожи специальным инструментом, необходимый для
+								дальнейшего сшивания.
+							</p>
+							<p class="text-justify m-5 p-2 text-xl">
+								Каждое изделие прошивается вручную седельным швом! Данный метод
+								сшивания кожи существовал еще до нашей эры и считается самым
+								прочным швом, превосходящим машинные.
+							</p>
+						</div>
+					</div>
+					<div class="relative min-h-screen overflow-hidden rounded-xl my-2">
+						<!-- Фон с размытием (внутри overflow-hidden) -->
+						<div
+							class="absolute inset-0 bg-[url('BPLPhoto/work/6.jpg')] blur-[1px] bg-cover bg-center brightness-50 contrast-115"
+						></div>
+
+						<!-- Контент (не затронут blur) -->
+						<div
+							class="z-10 inset-0 flex flex-col items-center justify-center text-stone-300 contrast-125 my-4"
+						>
+							<h2 class="text-center text-stone-200 m-5 p-3 text-2xl">
+								Заключительный этап работы
+							</h2>
+							<p class="text-justify m-5 p-2 text-xl">
+								На данном этапе изделие склеено и прошито.
+							</p>
+							<p class="text-justify m-5 p-2 text-xl">
+								Специальным прессом с термо-платформой ставится клише
+								производителя.
+							</p>
+
+							<p class="text-justify m-5 p-2 text-xl">
+								Добавляется декоративная кайомка вдоль каждого края изделия,
+								придавая ему еще более аккуратный и законченный вид.
+							</p>
+							<p class="text-justify m-5 p-2 text-xl">
+								Последним этапом является покраска и обработка торца
+								специальными составами. Мы используем проникающую краску и
+								наносим ее в несколько слоев. Это защищает урез от попадания
+								влаги и расслаивания. Именно поэтому изделия сохраняют свой вид
+								и служат Вам долгие годы!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Слайдер для десктопа -->
+			<div class="swiper w-full">
+				<div class="swiper-wrapper hidden md:flex">
+					<!-- Слайды -->
+					<div class="swiper-slide">
+						<div class="flex gap-4 mx-5 my-2.5">
+							<div class="bg-white shadow-md rounded-lg items-center w-1/2">
+								<h2
+									class="mt-4 text-6xl md:text-4xl sm:text-xl text-center font-normal text-primary"
+								>
+									Первый этап работы
+								</h2>
+								<p
+									class="text-justify m-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Обращаясь к нам, Вы гарантированно получаете качественный
+									товар, который обязательно станет любимым аксессуаром, а так
+									же подчеркнет Вашу индивидуальность.
+								</p>
+								<p
+									class="text-justify m-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Есть возможность выбрать фактуру кожи: гладкая или с мереей,
+									мягкая или более упругая.
+								</p>
+								<p
+									class="text-justify m-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Выберем необходимую толщину кожи именно под Ваше изделие.
+								</p>
+								<p
+									class="text-justify m-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Далее после выбора цвета, разновидности нити и подбора
+									фурнитуры мастер приступает к работе!
+								</p>
+							</div>
+							<img
+								src="/BPLPhoto/work/01.jpeg"
+								alt="Примеры работ"
+								class="w-1/2 max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="flex gap-4 mx-5 my-2.5">
+							<div class="bg-white shadow-md rounded-lg items-center w-1/2">
+								<h2
+									class="mt-4 text-6xl md:text-4xl sm:text-xl text-center font-normal text-primary"
+								>
+									Второй этап работы
+								</h2>
+								<p
+									class="text-justify m-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Мастер проектирует изделие и создает выкройку.
+								</p>
+								<p
+									class="text-justify m-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Если проект индивидуальный- мастер отшивает "пилотный"
+									вариант.
+								</p>
+								<p
+									class="text-justify m-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Далее происходит раскрой материала и сборка изделия.
+								</p>
+								<p
+									class="text-justify m-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									"Тонкие" места укрепляются специальными дублирующими
+									материалами.
+								</p>
+							</div>
+							<img
+								src="/BPLPhoto/work/02.jpg"
+								alt="Примеры работ"
+								class="w-1/2 max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="flex gap-4 mx-5 my-2.5">
+							<div class="bg-white shadow-md rounded-lg items-center w-1/2">
+								<h2
+									class="mt-4 text-6xl md:text-4xl sm:text-xl text-center font-normal text-primary"
+								>
+									Третий этап работы
+								</h2>
+								<p
+									class="text-justify m-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									На данном этапе происходит склеивание деталей клеем для кожи.
+								</p>
+								<p
+									class="text-justify m-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Разметка и пробой кожи специальным иструментом, необходимый
+									для дальнейшего сшивания.
+								</p>
+								<p
+									class="text-justify m-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Каждое изделие прошивается вручную седельным швом! Данный
+									метод сшивания кожи существовал еще до нашей эры и считается
+									самым прочным швом, превосходящим машинные.
+								</p>
+							</div>
+							<img
+								src="/BPLPhoto/work/12.jpg"
+								alt="Примеры работ"
+								class="w-1/2 max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="flex gap-4 mx-5 my-2.5">
+							<div class="bg-white shadow-md rounded-lg items-center w-1/2">
+								<h2
+									class="mt-4 text-6xl md:text-4xl sm:text-xl text-center font-normal text-primary"
+								>
+									Заключительный этап
+								</h2>
+								<p
+									class="text-justify mx-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									На данном этапе изделие склеено и прошито.
+								</p>
+								<p
+									class="text-justify mx-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Термо-прессом ставится клише.
+								</p>
+								<p
+									class="text-justify mx-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Срезаются лишние куски кожи, придавая изделию финальный вид.
+								</p>
+								<p
+									class="text-justify mx-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Добавляется декоративная кайомка вдоль каджого края изделия,
+									придавая ему еще более аккуратный и законченный вид.
+								</p>
+								<p
+									class="text-justify mx-5 md:p-2 p-3 2xl:text-[30px] inset-0 md:text-xl sm:text-xl"
+								>
+									Последним этапом является покраска и обработка торца
+									специальными составами. Мы используем проникающую краску и
+									наносим ее в несколько слоев. Это защищает урез от попадания
+									влаги и расслаивания. Именно поэтому изделия сохраняют свой
+									вид и служат Вам долгие годы!
+								</p>
+							</div>
+							<img
+								src="/BPLPhoto/work/6.jpg"
+								alt="Примеры работ"
+								class="w-1/2 max-h-[593px] rounded-lg object-cover transition duration-300 ease-in-out transform"
+							/>
+						</div>
+					</div>
+				</div>
+
+				<!-- Навигационные кнопки -->
+				<div
+					class="swiper-button-prev text-stone-900 pl-4 mx-1 hover:scale-105 hover:text-primary"
+				></div>
+				<div
+					class="swiper-button-next text-stone-900 pr-4 mx-1 hover:scale-105 hover:text-primary"
+				></div>
+
+				<!-- Полоса прокрутки -->
+				<div
+					class="swiper-scrollbar text-stone-900 shadow-white shadow-xl/40"
+				></div>
+			</div>
+		</section>
+
+		<div class="dark:bg-black w-full">
+			<div
+				class="w-full h-[2px] max-w-6xl mx-auto"
+				style="
+					background-image: linear-gradient(
+						90deg,
+						rgba(149, 131, 198, 0) 1.46%,
+						rgba(65, 30, 1, 0.6) 30.83%,
+						rgba(65, 30, 1, 0.6) 75.57%,
+						rgba(149, 131, 198, 0) 107.92%
+					);
+				"
+			></div>
+		</div>
+		<section
+			id="process"
+			class="py-16 bg-gradient-to-br from-gray-500/50 to-white"
+		>
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-12">
+					<h2
+						class="text-[30px] md:text-4xl font-bold mb-4 tracking-tight text-stone-950"
+					>
+						Как мы <span class="text-primary">работаем</span>
+					</h2>
+					<p class="text-primary text-2xl max-w-2xl mx-auto">
+						Простой и понятный процесс сотрудничества с нами
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<!-- Process Step 1 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="step-number bg-stone-800 text-white w-16 h-14 rounded-xl flex items-center justify-center text-2xl font-bold mx-auto mb-4 transition duration-300 hover:bg-primary"
+						>
+							01
+						</div>
+						<h3 class="text-xl font-semibold mb-2 text-stone-800">Заявка</h3>
+						<p class="text-stone-600">
+							Вы связываетесь с нами любым удобным способом и мы обсуждаем Ваш
+							заказ.
+						</p>
+					</div>
+
+					<!-- Process Step 2 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="step-number bg-stone-800 text-white w-16 h-14 rounded-xl flex items-center justify-center text-2xl font-bold mx-auto mb-4 transition duration-300 hover:bg-primary"
+						>
+							02
+						</div>
+						<h3 class="text-xl font-semibold mb-2 text-stone-800">
+							Согласование
+						</h3>
+						<p class="text-stone-600">
+							Подбираем материалы, фактуру и цвет будущего изделия.
+						</p>
+					</div>
+
+					<!-- Process Step 3 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="step-number bg-stone-800 text-white w-16 h-14 rounded-xl flex items-center justify-center text-2xl font-bold mx-auto mb-4 transition duration-300 hover:bg-primary"
+						>
+							03
+						</div>
+						<h3 class="text-xl font-semibold mb-2 text-stone-800">
+							Оценка стоимости
+						</h3>
+						<p class="text-stone-600">
+							Согласуем с Вами стоимость и сложность выполнения работ.
+						</p>
+					</div>
+
+					<!-- Process Step 4 -->
+					<div
+						class="process-step text-center bg-white p-6 rounded-lg shadow-md hover:transform hover:scale-105 transition-all duration-300"
+					>
+						<div
+							class="step-number bg-stone-800 text-white w-16 h-14 rounded-xl flex items-center justify-center text-2xl font-bold mx-auto mb-4 transition duration-300 hover:bg-primary"
+						>
+							04
+						</div>
+						<h3 class="text-xl font-semibold mb-2 text-stone-800">
+							Выполнение работ
+						</h3>
+						<p class="text-stone-600">
+							Выполням работу, обсуждаем и оформляем доставку.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="dark:bg-black w-full">
+			<div
+				class="w-full h-[2px] max-w-6xl mx-auto"
+				style="
+					background-image: linear-gradient(
+						90deg,
+						rgba(149, 131, 198, 0) 1.46%,
+						rgba(65, 30, 1, 0.6) 30.83%,
+						rgba(65, 30, 1, 0.6) 75.57%,
+						rgba(149, 131, 198, 0) 107.92%
+					);
+				"
+			></div>
+		</div>
+		<footer class="rounded-b-lg dark:bg-gray-900 bg-white">
+			<div id="contacts" class="max-w-screen mx-4 p-4 md:py-4">
+				<div class="w-full flex items-center justify-between">
+					<a href="https://t.me/Brutalpugleather" aria-label="Brutalpugleather">
+						<img
+							class="w-full h-14 hover:scale-105"
+							src="PUGpng.png"
+							loading="lazy"
+							alt="Brutal Pug Leather Logo"
+						/>
+					</a>
+					<div
+						class="mb-6 mx-14 text-sm font-medium text-stone-900 sm:mb-0 dark:text-stone-500"
+					>
+						<div>Связаться с нами</div>
+						<div class="grid grid-cols-3 w-full pt-4 place-items-center">
+							<a
+								href="https://www.instagram.com/brutalpugleather?igsh=MTVibDJyeGZ4NjFncQ=="
+								class=""
+							>
+								<img
+									class="w-auto h-7 hover:scale-110"
+									src="icon_instagram.png"
+									loading="lazy"
+									alt="Telegram"
+							/></a>
+
+							<a href="https://t.me/Brutalpugleather" class="">
+								<img
+									class="w-auto h-7 hover:scale-110"
+									src="icon_telegram.png"
+									loading="lazy"
+									alt="Telegram"
+							/></a>
+
+							<a href="mailto:Februaryjack2000@gmail.com" class="">
+								<img
+									class="w-auto h-7 hover:scale-110"
+									src="icon_gmail.png"
+									loading="lazy"
+									alt="Telegram"
+							/></a>
+						</div>
+					</div>
+				</div>
+				<div class="grid grid-cols-2 text-center mt-6 gap-2">
+					<div class="w-full">
+						<span class="text-left text-sm text-stone-900 dark:text-stone-500">
+							© 2025 <a href="#" class="hover:underline">BrutalPugLeather™</a>.
+							All Rights Reserved.
+						</span>
+					</div>
+					<div class="w-full">
+						<a
+							href="policy.html"
+							class="text-sm text-stone-900 hover:text-primary dark:text-stone-500 mx-10 md:mx-6 text-end"
+							>Политика конфиденциальности</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<!-- Кнопка "Назад к верху" -->
+			<button
+				id="backToTopBtn"
+				title="Go to top"
+				class="hidden fixed bottom-20 md:bottom-14 right-6 z-50 bg-stone-800 text-white px-4 py-3 rounded-lg text-lg hover:bg-primary focus:outline-none"
+				onclick="topFunction()"
+				aria-label="Scroll to top"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-6 w-6"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M5 15l7-7 7 7"
+					/>
+				</svg>
+			</button>
+		</footer>
+
+		<!-- JavaScript -->
+		<script>
+			// Mobile Menu Toggle with aria-expanded update
+			const mobileMenuButton = document.getElementById('mobile-menu-button');
+			const mobileMenu = document.getElementById('mobile-menu');
+
+			if (mobileMenuButton && mobileMenu) {
+				mobileMenuButton.addEventListener('click', () => {
+					mobileMenu.classList.toggle('hidden');
+					const expanded =
+						mobileMenuButton.getAttribute('aria-expanded') === 'true';
+					mobileMenuButton.setAttribute('aria-expanded', String(!expanded));
+				});
+
+				const mobileLinks = mobileMenu.querySelectorAll('a');
+				mobileLinks.forEach(link => {
+					link.addEventListener('click', () => {
+						mobileMenu.classList.add('hidden');
+						mobileMenuButton.setAttribute('aria-expanded', 'false');
+					});
+				});
+			}
+
+			const backToTopBtn = document.getElementById('backToTopBtn');
+			if (backToTopBtn) {
+				window.onscroll = function () {
+					if (document.documentElement.scrollTop > 20) {
+						backToTopBtn.classList.remove('hidden');
+					} else {
+						backToTopBtn.classList.add('hidden');
+					}
+				};
+
+				window.topFunction = function () {
+					window.scrollTo({ top: 0, behavior: 'smooth' });
+				};
+			}
+
+			// Инициализация Swiper
+			const swiper = new Swiper('.swiper', {
+				loop: true,
+				observer: true,
+				observeParents: true,
+				pagination: {
+					el: '.swiper-pagination',
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				slidesPerGroup: 1,
+				scrollbar: {
+					el: '.swiper-scrollbar',
+				},
+				slidesPerView: 'auto', // Слайды будут занимать столько места, сколько нужно
+			});
+		</script>
+	</body>
+</html>
